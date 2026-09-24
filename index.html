@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Specialty Coffee Roasters | Artisanal Microlots & Espresso Bar</title>
+  <meta name="description" content="Artisanal single-origin coffee roastery and tasting room. Ethically sourced microlots roasted to perfection. Reserve your table or order whole bean coffee online.">
+  <meta name="keywords" content="specialty coffee, coffee roasters, single origin, pour over, artisanal cafe, espresso bar, microlot coffee, ethical direct trade">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aurora Specialty Coffee Roasters | Artisanal Microlots & Espresso Bar">
+  <meta property="og:description" content="Artisanal single-origin coffee roastery and tasting room. Ethically sourced microlots roasted to perfection.">
+  <meta property="og:image" content="assets/images/hero-pour.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e5a964'%3E%3Cpath d='M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow layers -->
+  <div class="bg-ambient-glow" aria-hidden="true"></div>
+
+  <div class="content-wrapper">
+    <!-- Header & Navigation -->
+    <header class="site-header" id="header">
+      <div class="container nav-container">
+        <a href="#hero" class="brand-logo" aria-label="Aurora Coffee Roasters Home">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M18.5 7.5a4.5 4.5 0 0 1 0 9H18V19a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7.5A2.5 2.5 0 0 1 4.5 5h10.2A4.5 4.5 0 0 1 18.5 7.5zM16 16.5a2.5 2.5 0 0 0 0-5V7.5a2.5 2.5 0 0 0-1.3-2.2H4.5A.5.5 0 0 0 4 5.8V19a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2.5zM6 1h2v3H6zm4 0h2v3h-2zm4 0h2v3h-2z"/>
+            </svg>
+          </div>
+          <div class="brand-title">
+            AURORA
+            <span>Specialty Roasters</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#menu">Reserve Menu</a></li>
+            <li><a href="#craft">Our Craft</a></li>
+            <li><a href="#spotlight">Highland Reserve</a></li>
+            <li><a href="#reservation">Book Table</a></li>
+            <li><a href="#visit">Roastery Hours</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="status-chip" id="nav-status-chip" title="Current Roastery Status">
+            <span class="status-dot pulse" id="live-status-dot"></span>
+            <span id="live-status-text">Open Now • Roasting until 7:00 PM</span>
+          </div>
+
+          <button class="cart-btn" id="cart-open-btn" aria-label="View Shopping Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="cart-badge" id="cart-badge">0</span>
+          </button>
+
+          <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="section-tag">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              Microlot Roastery • Handcrafted in Brooklyn & Portland
+            </div>
+            <h1 class="hero-title">
+              Artisanal Coffee, <br>
+              <span class="text-gradient">Roasted to Transcend</span> <br>
+              the Ordinary.
+            </h1>
+            <p class="hero-lead">
+              We source ultra-rare, high-altitude coffee lots directly from generational growers, roasting each micro-batch in fluid-bed profiles to illuminate every delicate floral note and nectar sweetness.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#menu" class="btn btn-primary">
+                Order Reserve Beans
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#reservation" class="btn btn-secondary">
+                Book Tasting Flight
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>32+</h3>
+                <p>Microlot Origins</p>
+              </div>
+              <div class="stat-item">
+                <h3>94.5</h3>
+                <p>Avg Cupping Score</p>
+              </div>
+              <div class="stat-item">
+                <h3>100%</h3>
+                <p>Direct Fair Trade</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media-wrapper">
+            <div class="hero-image-frame">
+              <img src="assets/images/hero-pour.jpg" alt="Artisanal specialty coffee pour-over brewing by head barista at Aurora Roasters" width="700" height="438">
+            </div>
+
+            <!-- Floating luxury glass badges -->
+            <div class="floating-badge floating-badge-top">
+              <div class="cupping-score-circle">94.5</div>
+              <div>
+                <strong style="display: block; font-size: 0.85rem; color: var(--accent-crema);">Ethiopia Yirgacheffe</strong>
+                <span style="font-size: 0.75rem; color: var(--accent-gold);">Heirloom Washed Lot</span>
+              </div>
+            </div>
+
+            <div class="floating-badge floating-badge-bottom">
+              <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--accent-gold); font-weight: 700; margin-bottom: 0.2rem;">Today's Batch</div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0;">Roasting daily small batches at 204°C profile.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Craftsmanship & Quality Pillars -->
+      <section class="features-section" id="craft">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path></svg>
+              </div>
+              <h3>Direct-Origin Traceability</h3>
+              <p>We partner with independent micro-lot farms across Ethiopia, Colombia, and Guatemala, paying 3.5× Fair Trade minimums directly to harvesters.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <h3>Precision Fluid-Bed Roasting</h3>
+              <p>State-of-the-art clean-air thermal convection prevents smoky bitter scorching, preserving pristine volatile fruit terpenes and natural sweetness.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <h3>Specialty Certified Cupping</h3>
+              <p>Every harvest lot is Q-Grader evaluated, roasted in micro-test flights, and cupped with zero compromises before hitting our brew bar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Menu & Catalog -->
+      <section class="menu-section" id="menu">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Seasonal Offerings</span>
+            <h2>Curated Beans & Brew Bar</h2>
+            <p>From award-winning single-origin bags to precision espresso extractions and freshly laminated morning pastries.</p>
+          </div>
+
+          <!-- Category filter buttons -->
+          <div class="menu-tabs" role="tablist" aria-label="Menu Categories">
+            <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">All Offerings</button>
+            <button class="tab-btn" data-filter="beans" role="tab" aria-selected="false">Single Origin Beans</button>
+            <button class="tab-btn" data-filter="espresso" role="tab" aria-selected="false">Espresso Bar</button>
+            <button class="tab-btn" data-filter="cold" role="tab" aria-selected="false">Cold Crafts & Tonics</button>
+            <button class="tab-btn" data-filter="pastry" role="tab" aria-selected="false">Artisanal Bakery</button>
+          </div>
+
+          <!-- Menu cards grid -->
+          <div class="menu-grid" id="menu-grid">
+            <!-- Dynamically populated by app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Atmosphere & Roastery Story -->
+      <section class="story-section">
+        <div class="container story-grid">
+          <div class="story-media">
+            <img src="assets/images/cafe-interior.jpg" alt="Interior architectural design of Aurora Specialty Coffee Roastery lounge" width="600" height="375">
+            <div class="story-overlay-tag">
+              <strong style="color: var(--accent-gold); display: block; font-size: 0.85rem;">FLAGSHIP TASTING ROOM</strong>
+              <span style="font-size: 0.75rem; color: var(--text-secondary);">Designed for mindful sipping & acoustic warmth</span>
+            </div>
+          </div>
+
+          <div class="story-content">
+            <span class="section-tag">Our Space & Sanctuary</span>
+            <h2>Where Architectural Design Meets Specialty Science</h2>
+            <p>
+              Step into an environment sculpted around sensory clarity. Featuring custom acoustic baffling, low-glare warm brass fixtures, and our bespoke cast-concrete pour-over bar, Aurora was conceived as a respite from the rush of metropolitan life.
+            </p>
+            <blockquote class="story-quote">
+              "Coffee is not merely fuel—it is an intricate botanical voyage that deserves the same reverence as grand cru wine."
+            </blockquote>
+            <p>
+              Witness our roasters calibrate daily roast profiles through glass observation partitions, or consult our baristas on extraction ratios, water chemistry, and grind calibrations for your home brewing setup.
+            </p>
+            <div style="margin-top: 2rem;">
+              <a href="#reservation" class="btn btn-outline-gold">Reserve Your Table</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Spotlight Section -->
+      <section class="spotlight-section" id="spotlight">
+        <div class="container spotlight-grid">
+          <div class="spotlight-image-wrapper">
+            <img src="assets/images/reserve-bag.jpg" alt="Aurora Coffee Roasters Highland Reserve Ethiopia Yirgacheffe coffee bag" width="560" height="420">
+          </div>
+
+          <div class="spotlight-info">
+            <span class="section-tag">Reserve Release</span>
+            <h2 style="font-size: 2.4rem; margin-bottom: 1rem;">Highland Reserve: Ethiopia Yirgacheffe</h2>
+            <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem;">
+              Cultivated along the misty slopes of the Gedeo Zone at an elevation exceeding 2,200 meters. Grown by multigenerational family farmers and naturally wet-processed with crystalline river water.
+            </p>
+            
+            <div class="spotlight-specs">
+              <div class="spec-box">
+                <span>Cupping Score</span>
+                <strong>94.5 Points (Exceptional)</strong>
+              </div>
+              <div class="spec-box">
+                <span>Elevation</span>
+                <strong>2,100 – 2,300 MASL</strong>
+              </div>
+              <div class="spec-box">
+                <span>Flavor Profile</span>
+                <strong>Bergamot & White Peach</strong>
+              </div>
+              <div class="spec-box">
+                <span>Roast Profile</span>
+                <strong>Light Convection Roast</strong>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+              <button class="btn btn-primary" onclick="document.querySelector('.view-profile-btn[data-id=\'ethiopia-yirgacheffe\']')?.click()">
+                Explore Sensory Radar
+              </button>
+              <button class="btn btn-secondary" onclick="document.querySelector('.add-cart-btn[data-id=\'ethiopia-yirgacheffe\']')?.click()">
+                Add 12oz Bag ($24.50)
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reservation & Flight Booking Section -->
+      <section class="booking-section" id="reservation">
+        <div class="container">
+          <div class="booking-card-wrapper">
+            <div class="booking-grid">
+              <div class="booking-info">
+                <span class="section-tag">Tasting Reservations</span>
+                <h2>Book a Table or Sensory Flight</h2>
+                <p>Reserve an intimate table in our lounge or experience an exclusive 45-minute guided cupping flight led by our head roaster.</p>
+                
+                <ul class="booking-perks">
+                  <li class="booking-perk-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Three-origin comparative pour-over or espresso pairings
+                  </li>
+                  <li class="booking-perk-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Complimentary cardamomm bun or dark chocolate cruffin pairing
+                  </li>
+                  <li class="booking-perk-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Take-home 100g sample of our freshest test roast
+                  </li>
+                  <li class="booking-perk-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Zero cancellation fee up to 2 hours before your booking
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Reservation Form -->
+              <form class="booking-form" id="reservation-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="res-name">Full Name *</label>
+                    <input type="text" id="res-name" class="form-control" placeholder="e.g. Maya Chen" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="res-email">Email Address *</label>
+                    <input type="email" id="res-email" class="form-control" placeholder="maya@example.com" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="res-phone">Phone Number</label>
+                    <input type="tel" id="res-phone" class="form-control" placeholder="+1 (555) 000-0000">
+                  </div>
+                  <div class="form-group">
+                    <label for="res-guests">Number of Guests *</label>
+                    <select id="res-guests" class="form-control" required>
+                      <option value="1">1 Person (Brew Bar Seat)</option>
+                      <option value="2" selected>2 Guests (Lounge Table)</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                      <option value="6">6 Guests (Private Alcove)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="res-date">Date *</label>
+                    <input type="date" id="res-date" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="res-time">Preferred Time *</label>
+                    <select id="res-time" class="form-control" required>
+                      <option value="08:30 AM">08:30 AM - Morning Awakening</option>
+                      <option value="10:00 AM">10:00 AM - Prime Pour-Over</option>
+                      <option value="11:30 AM">11:30 AM - Midday Flight</option>
+                      <option value="02:00 PM">02:00 PM - Afternoon Cupping</option>
+                      <option value="04:30 PM">04:30 PM - Golden Hour Tasting</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-flight">Experience Type *</label>
+                  <select id="res-flight" class="form-control" required>
+                    <option value="Standard Table Reservation">Standard Table Reservation (Ala Carte Menu)</option>
+                    <option value="Signature Pour-Over Flight ($18/person)">Signature Pour-Over Flight ($18/person)</option>
+                    <option value="Espresso & Botanical Tonic Journey ($22/person)">Espresso & Botanical Tonic Journey ($22/person)</option>
+                    <option value="Master Roaster Cupping Session ($35/person)">Master Roaster Cupping Session ($35/person)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-notes">Dietary Preferences or Special Requests</label>
+                  <input type="text" id="res-notes" class="form-control" placeholder="e.g. Oat milk preferred, celebratory anniversary">
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
+                  Confirm Instant Reservation
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Reviews & Accolades -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Community & Praise</span>
+            <h2>Acclaimed by Coffee Purists</h2>
+            <p>Read what fellow coffee enthusiasts and certified cuppers say about the Aurora experience.</p>
+          </div>
+
+          <div class="reviews-grid">
+            <div class="review-card">
+              <div class="stars">
+                ★★★★★
+              </div>
+              <p class="review-text">
+                "The Ethiopia Yirgacheffe pourover here rewired my palate. The floral aromatics of jasmine and candied lemon are as translucent and crisp as fine tea. A masterpiece in roasting."
+              </p>
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">EL</div>
+                <div>
+                  <div class="reviewer-name">Elena Lindqvist</div>
+                  <div class="reviewer-role">Licensed Q-Grader & Writer</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                ★★★★★
+              </div>
+              <p class="review-text">
+                "The atmosphere is unmatched. You can sit with a book, sip the Bourbon Sea Salt Cortado, and soak in the warm lighting. Ordering coffee beans online has also been flawless and ultra-fresh."
+              </p>
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">MC</div>
+                <div>
+                  <div class="reviewer-name">Marcus Vance</div>
+                  <div class="reviewer-role">Architect & Local Resident</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                ★★★★★
+              </div>
+              <p class="review-text">
+                "We booked the Saturday cupping flight for our anniversary. The roaster broke down varietals, elevation, and terroir with so much warmth and passion. Don't skip the cardamom bun!"
+              </p>
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">ST</div>
+                <div>
+                  <div class="reviewer-name">Sophia Takahashi</div>
+                  <div class="reviewer-role">Culinary Director</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visit Us / Operating Hours & Location -->
+      <section class="visit-section" id="visit">
+        <div class="container">
+          <div class="visit-grid">
+            <div class="hours-card">
+              <span class="section-tag">Roastery Hours</span>
+              <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Operating Schedule</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                Espresso bar opens early; batch roasters active Tuesday through Saturday mornings.
+              </p>
+              
+              <table class="hours-table">
+                <tbody>
+                  <tr>
+                    <td>Monday</td>
+                    <td>7:00 AM – 7:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday (Roast Day)</td>
+                    <td>7:00 AM – 7:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>7:00 AM – 7:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday (Roast Day)</td>
+                    <td>7:00 AM – 7:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>7:00 AM – 8:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday (Cupping Flights)</td>
+                    <td>8:00 AM – 8:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>8:00 AM – 6:00 PM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="location-card">
+              <span class="section-tag">Location & Contact</span>
+              <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Flagship Roastery</h3>
+              <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                Located in the historic cobblestone arts district, two blocks from the waterfront.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary); font-size: 0.95rem;">
+                <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0; margin-top: 2px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <div>
+                    <strong style="color: var(--text-primary); display: block;">Address</strong>
+                    424 Water Street, DUMBO Historic District<br>
+                    Brooklyn, New York 11201
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0; margin-top: 2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <div>
+                    <strong style="color: var(--text-primary); display: block;">Telephone</strong>
+                    +1 (718) 555-0198
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0; margin-top: 2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <div>
+                    <strong style="color: var(--text-primary); display: block;">Wholesale & Inquiries</strong>
+                    roasters@auroracoffee.internal
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 2rem;">
+                <a href="#reservation" class="btn btn-primary" style="width: 100%;">
+                  Plan Your Visit & Tasting
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <a href="#hero" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M18.5 7.5a4.5 4.5 0 0 1 0 9H18V19a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7.5A2.5 2.5 0 0 1 4.5 5h10.2A4.5 4.5 0 0 1 18.5 7.5zM16 16.5a2.5 2.5 0 0 0 0-5V7.5a2.5 2.5 0 0 0-1.3-2.2H4.5A.5.5 0 0 0 4 5.8V19a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2.5zM6 1h2v3H6zm4 0h2v3h-2zm4 0h2v3h-2z"/>
+              </svg>
+            </div>
+            <div class="brand-title">
+              AURORA
+              <span>Specialty Roasters</span>
+            </div>
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.65; max-width: 320px;">
+            Cultivating exceptional coffee experiences through micro-batch thermal roasting, transparent producer relationships, and sensory craft.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#menu">Reserve Beans</a></li>
+            <li><a href="#craft">Fluid-Bed Roasting</a></li>
+            <li><a href="#spotlight">Origin Terroir</a></li>
+            <li><a href="#reservation">Table Reservations</a></li>
+            <li><a href="#visit">Hours & Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Producer Origins</h4>
+          <ul class="footer-links">
+            <li><a href="#menu">Gedeo Zone, Ethiopia</a></li>
+            <li><a href="#menu">Huila, Colombia</a></li>
+            <li><a href="#menu">Antigua Valley, Guatemala</a></li>
+            <li><a href="#menu">Nyeri Hill, Kenya</a></li>
+            <li><a href="#menu">Tarrazú, Costa Rica</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Reserve Club</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+            Subscribe to receive private microlot allocations, roast notifications, and 15% off your first coffee order.
+          </p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="form-control" placeholder="Enter your email" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div>
+          &copy; 2026 Aurora Specialty Coffee Roasters LLC. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: var(--text-dim); text-decoration: none;">Privacy Policy</a>
+          <a href="#" style="color: var(--text-dim); text-decoration: none;">Terms of Service</a>
+          <a href="#" style="color: var(--text-dim); text-decoration: none;">Ethical Trade Index</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Shopping Cart Slideout Drawer -->
+  <div class="cart-drawer-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <h3>Your Order Bag</h3>
+      </div>
+      <button class="close-btn" id="cart-close-btn" aria-label="Close Shopping Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-items-list" id="cart-items-container">
+      <!-- Injected by app.js -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span>Order Subtotal</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-row" style="font-size: 0.85rem; color: var(--text-dim);">
+        <span>Estimated Sales Tax (8.875%)</span>
+        <span>Calculated</span>
+      </div>
+      <div class="cart-total-row">
+        <span>Estimated Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <button class="btn btn-primary" id="checkout-btn" style="width: 100%;">
+        Proceed to Secure Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- Interactive Sensory Tasting Modal -->
+  <div class="modal-overlay" id="tasting-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="section-tag" style="margin-bottom: 0.5rem;">Terroir & Sensory Radar</div>
+      <h3 id="modal-title" style="font-size: 1.6rem; margin-bottom: 0.25rem;">Highland Reserve</h3>
+      <div id="modal-origin" style="font-size: 0.88rem; color: var(--accent-gold); margin-bottom: 1rem;">Gedeo Zone, Ethiopia</div>
+
+      <p id="modal-desc" style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; margin-bottom: 1rem;">
+        Detailed sensory analysis and origin notes.
+      </p>
+
+      <div class="modal-details-grid">
+        <div class="modal-detail-item">
+          <span>Altitude</span>
+          <strong id="modal-altitude">2,100 - 2,300m</strong>
+        </div>
+        <div class="modal-detail-item">
+          <span>Process Method</span>
+          <strong id="modal-process">Washed, Raised African Beds</strong>
+        </div>
+        <div class="modal-detail-item">
+          <span>SCA Score</span>
+          <strong id="modal-cupping">94.5 Points</strong>
+        </div>
+        <div class="modal-detail-item">
+          <span>Roast Calibration</span>
+          <strong id="modal-roast">Light - Medium</strong>
+        </div>
+      </div>
+
+      <h4 style="font-size: 0.95rem; margin-top: 1.25rem; margin-bottom: 0.75rem;">Flavor Intensity & Extraction Metrics</h4>
+      <div class="radar-bar-group" id="modal-radar">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="form-group" style="margin-top: 1.25rem; margin-bottom: 1.25rem;">
+        <label for="modal-grind-select">Preferred Grind Calibration</label>
+        <select id="modal-grind-select" class="form-control">
+          <option value="Whole Bean (Optimal Freshness)" selected>Whole Bean (Optimal Freshness)</option>
+          <option value="Chemex & Drip Filter (Medium-Coarse)">Chemex & Drip Filter (Medium-Coarse)</option>
+          <option value="Fine Espresso (Specialty Calibration)">Fine Espresso (Specialty Calibration)</option>
+          <option value="French Press / Cold Brew (Coarse)">French Press / Cold Brew (Coarse)</option>
+          <option value="Aeropress / V60 (Medium-Fine)">Aeropress / V60 (Medium-Fine)</option>
+        </select>
+      </div>
+
+      <div style="display: flex; gap: 1rem;">
+        <button class="btn btn-primary" id="modal-add-cart-btn" style="flex: 1;">
+          Add to Order
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
