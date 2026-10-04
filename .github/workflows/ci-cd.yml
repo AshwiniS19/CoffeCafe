@@ -1,0 +1,86 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  # =============================================================
+  # STAGE 1: Continuous Integration (CI)
+  # Tests and verifies the Docker build before anything gets published
+  # =============================================================
+  ci-build-and-test:
+    name: Build & Test Docker Image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image for testing
+        run: |
+          docker build -t coffecafe:test .
+
+      - name: Test container health
+        run: |
+          # 1. Start container on port 8080
+          docker run -d -p 8080:80 --name test-container coffecafe:test
+          
+          # 2. Wait for Nginx to initialize
+          sleep 2
+          
+          # 3. Send HTTP request to verify static files are served (returns 200 OK)
+          curl -f http://localhost:8080/ || (echo "Health check failed!" && exit 1)
+          
+          # 4. Stop and clean up test container
+          docker rm -f test-container
+
+  # =============================================================
+  # STAGE 2: Continuous Delivery (CD)
+  # Publishes the verified image to GitHub Container Registry (GHCR)
+  # Only triggers when code is merged into 'main'
+  # =============================================================
+  cd-publish-image:
+    name: Publish to Container Registry
+    needs: ci-build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Packages (GHCR)
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract Docker metadata (Tags & Labels)
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=raw,value=latest
+            type=sha,format=short
+
+      - name: Build and push production image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
